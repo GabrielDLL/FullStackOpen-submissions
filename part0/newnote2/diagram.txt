@@ -1,0 +1,17 @@
+note over user
+user enter data
+end note
+user->form: WRITE HTML is easy
+form-->user: HTML is easy
+user->form: HIT Submit
+note over form
+the form will send the content of the text and it's date of writing
+end note
+form->server:   HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa 
+note over spa.js
+spa.js insert the new content and it to the browser
+end note
+spa.js->browser:{content: HTML is easy, date: ...}
+note over browser:
+the browser is reloaded from the js file, and then render the new note over 
+end note
